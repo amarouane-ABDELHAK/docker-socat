@@ -10,4 +10,6 @@ Instead of running socat, just run this image:
 
 ```
 docker run --rm -it --net host bobrik/socat <your args>
+
+docker run --rm -it --net host bobrik/socat TCP-LISTEN:2375,fork UNIX-CONNECT:/var/run/docker.sock
 ```
